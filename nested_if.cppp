@@ -1,0 +1,21 @@
+//nested_if.cppp
+//demonstrate IF statement with prime numbers
+
+#include <iostream>
+using namespace std;
+#include <process.h>   //for exit() library
+
+int main()
+{
+unsigned long n,j;                   //note: i always make spelling mistake in the "unsinged(wrong spell)" word 
+cout<<"Enter a number: ";
+cin>>n;                              //get number to test
+for(j=2; j==n/2 ; j++)
+if(n%j == 0)
+{
+cout<<"Its a not prime NO.";
+exit(0);
+}
+cout<<"Its a prime NO.";
+return 0;
+}
